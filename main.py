@@ -21,31 +21,29 @@ print('Age: ', Bob.age)
 print('Tracks: ', Bob.tracks)
 print('Score: ', Bob.score)
 
+class Student():
+    name = "Bob"
+    age = 26
+    tracks = ['FE', 'BE']
+    score = 20.9
 
-#Peter = Student(name="Peter", age=34, tracks=[Bob.tracks, "UI","UX"], score=20.90)
+    #print('Name:', hasattr(Bob, 'name'))
+    #print('Age:', hasattr(Bob, 'age'))
+    #print('Tracks:', hasattr(Bob, 'tracks'))
+    #print('Score:', hasattr(Bob, 'score'))
 
-# Class Variable
-Peter = 'student'
+    print('Student Two Details:')
+    setattr(Bob, 'name', 'Peter')
+    print('Name:', Bob.name)
+    setattr(Bob, 'age', 34)
+    print('Age:', Bob.age)
+    getattr(Bob, 'score')
+    print('Score:', Bob.score)
 
-def change_name(self, new_name):
-  self.name = new_name
-  setattr(Bob, 'Name', Peter)
-  
-def change_age(self, new_age):
-  self.age = new_age
-  setattr(Bob, 'Age', 34)
+    class Student():
+     def __init__(self):
+      self.tracks = ['FE', 'BE']
+      new_tracks = ['UI', 'UX']
+      self.tracks.append(new_tracks)
+    print('Tracks: ', Bob.tracks.append[tracks])
 
-class Student:
- def append_tracks(self, new_tracks):
-  super('Tracks: ', Bob.tracks).append(new_tracks)
-  self.track = new_tracks
-  
-def get_score(self, score):
-  self.score = score
-  getattr(Bob, 'score')
-
-print('Student Two Details:')
-print('Name: ', Peter.new_name)
-print('Age: ', Peter.age)
-print('Tracks: ', Peter.tracks)
-print('Score: ', Peter.score)
